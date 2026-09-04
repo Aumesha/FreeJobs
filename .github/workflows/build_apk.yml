@@ -21,7 +21,7 @@ jobs:
     - name: Set up Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.19.x'
+        flutter-version: '3.19.6'
 
     - name: Get Dependencies
       run: flutter pub get
@@ -34,3 +34,4 @@ jobs:
       with:
         name: FreeJobs-Release-APK
         path: build/app/outputs/flutter-apk/app-release.apk
+        if-no-files-found: error
