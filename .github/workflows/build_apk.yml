@@ -24,7 +24,9 @@ jobs:
         channel: 'stable'
 
     - name: Get Dependencies
-      run: flutter pub get
+      run: |
+        flutter clean
+        flutter pub get
 
     - name: Build APK
       run: flutter build apk --release --no-tree-shake-icons
