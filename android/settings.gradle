@@ -1,0 +1,4 @@
+include ':app'
+
+def flutterSdkPath = System.getenv("FLUTTER_ROOT")
+assert flutterSdkPath != null, "Flutter SDK not found. Define location with flutter.sdk in the local.properties file."
